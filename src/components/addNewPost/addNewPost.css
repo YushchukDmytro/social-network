@@ -1,0 +1,38 @@
+@import '../../style/variables.css';
+
+.social__newpost{
+	/* box-shadow: 5px 5px 30px rgba(122, 1, 15, 0.25); */
+	border-radius: 10px;
+	border: none;
+}
+.social__newpost-my{
+	font-size: 18px;
+	color: var(--text-color-dark);
+}
+.social__newpost-input{
+	width: 100%;
+	height: 50px;
+	border: none;
+	box-shadow: 5px 5px 30px rgba(122, 1, 15, 0.25);
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 10px;
+}
+.social__newpost-button{
+	text-align: center;
+	padding: 5px 10px;
+	width: 100px;
+	font-size: 14px;
+	color: white;
+	background-color: var(--main-color);
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.social__newpost-add{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}

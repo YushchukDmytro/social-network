@@ -1,0 +1,20 @@
+@import '../../style/variables.css';
+
+.social__mypost{
+	border-radius: 10px;
+	padding: 10px 10px;
+	box-shadow: 5px 5px 30px rgba(122, 1, 15, 0.25);
+}
+.social__mypost-wrapper {
+	display: grid;
+	grid-template-columns: 50px auto;
+	column-gap: 10px;
+	align-items: center;
+	color: var(--text-color-dark);
+}
+.social__mypost-wrapper img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+}

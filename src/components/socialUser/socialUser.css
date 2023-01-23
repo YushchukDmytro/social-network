@@ -1,0 +1,29 @@
+@import '../../style/variables.css';
+
+.social__user{
+	display: grid;
+	grid-template-columns: 100px auto;
+	column-gap: 20px;
+	/* box-shadow: 5px 5px 30px rgba(122, 1, 15, 0.25); */
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	color: var(--text-color-dark);
+}
+.social__user-avatar img{
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+.social__user-descr{
+	display: grid;
+	row-gap: 5px;
+}
+
+.social__user-name{
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}

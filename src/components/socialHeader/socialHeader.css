@@ -1,0 +1,17 @@
+@import '../../style/variables.css';
+
+.social__header{
+	width: 100%;
+	height: 100px;
+	background-color: var(--main-color);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	padding: 0 10px 0 10px;
+	border-radius: 10px;
+}
+.social__header .social__header-text{
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+}
