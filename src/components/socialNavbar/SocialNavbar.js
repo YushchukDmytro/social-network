@@ -1,17 +1,19 @@
-import './socialNavbar.css';
+import { NavLink } from 'react-router-dom';
 
+import './socialNavbar.scss';
 
 const SocialNavbar = () => {
 	return(
 		<div className="social__navbar">
 			<ul className="social__nav">
-				<li className="social__item"><a href="/Profile">Profile</a></li>
-				<li className="social__item"><a href="/Messages">Messages</a></li>
-				<li className="social__item"><a href="/News">News</a></li>
-				<li className="social__item"><a href="/Music">Music</a></li>
-				<li className="social__item"><a href="/Settings">Settings</a></li>
+				<li className="social__item"><NavLink to="/profile">Profile</NavLink></li>
+				<li className="social__item"><NavLink to="/dialog">Messages</NavLink></li>
+				<li className="social__item"><NavLink to="/news">News</NavLink></li>
+				<li className="social__item"><NavLink to="/music">Music</NavLink></li>
+				<li className="social__item"><NavLink to="/settings">Settings</NavLink></li>
 			</ul>
 		</div>
+		
 	)
 }
 

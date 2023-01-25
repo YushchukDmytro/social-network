@@ -1,4 +1,4 @@
-@import '../../style/variables.css';
+@import '../../style/variables.scss';
 
 .social__user{
 	display: grid;
@@ -8,7 +8,7 @@
 	border-radius: 10px;
 	border: none;
 	padding: 10px;
-	color: var(--text-color-dark);
+	color: $text-color-dark;
 }
 .social__user-avatar img{
 	width: 100px;

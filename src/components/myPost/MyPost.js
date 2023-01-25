@@ -1,4 +1,4 @@
-import './myPost.css';
+import './myPost.scss';
 
 import ava from '../../resources/img/abyss.jpg'
 

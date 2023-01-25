@@ -1,4 +1,4 @@
-import './socialMain.css';
+import './socialMain.scss';
 
 import SocialUser from '../socialUser/SocialUser';
 import AddNewPost from '../addNewPost/AddNewPost';

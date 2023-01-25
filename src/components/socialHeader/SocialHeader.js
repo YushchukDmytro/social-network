@@ -1,4 +1,4 @@
-import './socialHeader.css';
+import './socialHeader.scss';
 
 import logo from '../../resources/img/Avengers_logo.png'
 

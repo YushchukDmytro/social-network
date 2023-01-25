@@ -1,4 +1,4 @@
-import './socialUser.css';
+import './socialUser.scss';
 
 import thor from '../../resources/img/thor.jpeg'
 

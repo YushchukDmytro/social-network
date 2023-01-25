@@ -1,9 +1,9 @@
-@import '../../style/variables.css';
+@import '../../style/variables.scss';
 
 .social__header{
 	width: 100%;
 	height: 100px;
-	background-color: var(--main-color);
+	background-color: $main-color;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;

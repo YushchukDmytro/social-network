@@ -1,4 +1,4 @@
-@import '../../style/variables.css';
+@import '../../style/variables.scss';
 
 .social__mypost{
 	border-radius: 10px;
@@ -10,7 +10,7 @@
 	grid-template-columns: 50px auto;
 	column-gap: 10px;
 	align-items: center;
-	color: var(--text-color-dark);
+	color: $text-color-dark;
 }
 .social__mypost-wrapper img{
 	width: 50px;
