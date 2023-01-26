@@ -24,6 +24,11 @@
 		&-item{
 			margin-top: 10px;
 		}
+		&-item{
+			a.active{
+				color: gold;
+			}
+		}
 	}
 
 	// .social__friend-list

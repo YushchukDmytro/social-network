@@ -4,36 +4,54 @@ import ava from '../../resources/img/vision.png';
 
 import './dialogs.scss';
 
+
 const Dialogs = (props) => {
 
-	// const data = [
-	// 	{name: "Dima", id: 1},
-	// 	{name: "Tania", id: 2},
-	// 	{name: "Margaret", id: 3},
-	// 	{name: "Andriy", id: 4}
-	// ]
+	const data = [
+		{name: "Dima", id: 1},
+		{name: "Tania", id: 2},
+		{name: "Margaret", id: 3},
+		{name: "Andriy", id: 4}
+	]
+
+	const messages = [
+		{message: "Hi!"},
+		{message: "Hi Margaret!"},
+		{message: "Hi Andry!"},
+		{message: "Hi Dima!"},
+		{message: "Hi somebody!"},
+	]
+
+	const messageComponent = messages.map(item => {
+		const{message} = item;
+		return(
+			<Message message = {message}/>
+		)
+	})
+
+	const friend = data.map(item => {
+		const{name, id} = item;
+
+		return(
+			<Friend key={id} name={name} id={id}/>
+		)
+	})
 
 	return(
 		<div className="social__dialogs">
 			<div className="social__friends">
 				<ul className="social__friends-list">
-					<Friend name = "Dima" id="1" />
-					<Friend name = "Tania" id="2"/>
-					<Friend name = "Margaret" id="3"/>
-					<Friend name = "Andriy" id='4'/>
+					{friend}
 				</ul>
 			</div>
 			<div className="social__dialog">
-				<Message message = "Hi"/>
-				<Message message = "Hi Andriy"/>
-				<Message message = "Hi Margaret"/>
+				{messageComponent}
 			</div>	
 		</div>
 	)
 }
 
-const Friend = (props) => {
-	const {name, id} = props;
+const Friend = ({name, id}) => {
 	return(
 		<li className="social__friends-item">
 			<NavLink to={"/dialog/" + id}>{name}</NavLink>
@@ -41,8 +59,8 @@ const Friend = (props) => {
 	)
 }
 
-const Message = (props) => {
-	const {message} = props;
+const Message = ({message}) => {
+
 	return(
 		<div className="social__dialog-item">
 			<img src={ava} alt="ava" />
