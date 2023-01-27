@@ -5,35 +5,19 @@ import ava from '../../resources/img/vision.png';
 import './dialogs.scss';
 
 
-const Dialogs = (props) => {
-
-	const data = [
-		{name: "Dima", id: 1},
-		{name: "Tania", id: 2},
-		{name: "Margaret", id: 3},
-		{name: "Andriy", id: 4}
-	]
-
-	const messages = [
-		{message: "Hi!"},
-		{message: "Hi Margaret!"},
-		{message: "Hi Andry!"},
-		{message: "Hi Dima!"},
-		{message: "Hi somebody!"},
-	]
+const Dialogs = ({messages, infoData}) => {
 
 	const messageComponent = messages.map(item => {
-		const{message} = item;
+		const{message, id} = item;
 		return(
-			<Message message = {message}/>
+			<Message message = {message} key={id}/>
 		)
 	})
 
-	const friend = data.map(item => {
+	const friend = infoData.map(item => {
 		const{name, id} = item;
-
 		return(
-			<Friend key={id} name={name} id={id}/>
+			<Friend name={name} id={id} key={id}/>
 		)
 	})
 
@@ -60,7 +44,6 @@ const Friend = ({name, id}) => {
 }
 
 const Message = ({message}) => {
-
 	return(
 		<div className="social__dialog-item">
 			<img src={ava} alt="ava" />

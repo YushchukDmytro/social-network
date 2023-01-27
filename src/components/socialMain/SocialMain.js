@@ -7,17 +7,12 @@ import MyPost from '../myPost/MyPost';
 import walper from '../../resources/img/post.jpg';
 
 
-const SocialMain = () => {
-	const posts = [
-		{post:"Hey, howe are you?"},
-		{post:"Hey!"},
-		{post:"I am fine!"},
-	]
+const SocialMain = ({posts}) => {
 
 	const postsComponent = posts.map(item => {
-		const{post} = item;
+		const{post, id} = item;
 		return(
-			<MyPost post={post}/>
+			<MyPost post={post} key={id}/>
 		)
 	})
 
